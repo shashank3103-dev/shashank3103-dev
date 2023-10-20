@@ -6,7 +6,7 @@
 
 <p align="left"> <a href="https://twitter.com/shashankshakya9" target="blank"><img src="https://img.shields.io/twitter/follow/shashankshakya9?logo=twitter&style=for-the-badge" alt="shashankshakya9" /></a> </p>
 
-- 🔭 I’m currently working on **Food dilevery**
+- 🔭 I’m currently working on **Food delivery project**
 
 - 🌱 I’m currently learning **flutter, Dart**
 
