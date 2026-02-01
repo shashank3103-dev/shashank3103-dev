@@ -15,7 +15,7 @@
 - 🔭 I’m currently working on **an education platform app**
 - 🌱 I’m currently learning **JavaScript, Redux**
 - 💬 Ask me about **React Native, TypeScript, Redux**
-- 📫 Reach me at **shashankshakya2015@gmail.com**
+- 📫 Reach me at **shashankshakya.dev@gmail.com**
 - ⚡ Fun fact: **I think I’m funny 😄**
 
 ---
