@@ -56,6 +56,10 @@
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=shashank3103-dev&show_icons=true&locale=en" alt="shashank3103-dev" /></p>
 
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=shashank3103-dev&" alt="shashank3103-dev" /></p>
+ <img
+    src="https://leetcard.jacoblin.cool/shashank-dev?theme=dark&font=Karma&ext=heatmap"
+    alt="LeetCode Stats"
+  />
 
 ---
 
