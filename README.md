@@ -139,7 +139,7 @@
 
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=shashank3103-dev&show_icons=true&locale=en" alt="shashank3103-dev" /></p>
 
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=shashank3103-dev&" alt="shashank3103-dev" /></p>
+<a href="https://git.io/streak-stats"><img src="https://github-readme-streak-stats.herokuapp.com?user=shashank3103-dev&theme=dark-smoky&hide_border=true&short_numbers=true&card_width=489" alt="GitHub Streak" /></a>
 
 ---
 ### 🧠 LeetCode Stats:
