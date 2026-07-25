@@ -61,4 +61,4 @@
 
 ### 🐍 GitHub Contribution Snake:
 
-![snake gif](https://raw.githubusercontent.com/shashank3103-dev/shashank3103-dev/output/github-contribution-grid-snake.svg)
+![snake svg](https://raw.githubusercontent.com/shashank3103-dev/shashank3103-dev/main/github-snake.svg)
