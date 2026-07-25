@@ -34,17 +34,101 @@
 ### 🛠️ Languages & Tools:
 
 <p align="left">
-  <a href="https://reactnative.dev/" target="_blank"><img src="https://reactnative.dev/img/header_logo.svg" width="40" height="40" alt="React Native" /></a>
-  <a href="https://www.typescriptlang.org/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" width="40" height="40" alt="TypeScript" /></a>
-  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" width="40" height="40" alt="JavaScript" /></a>
-  <a href="https://redux.js.org/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" width="40" height="40" alt="Redux" /></a>
-  <a href="https://nodejs.org/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" width="40" height="40" alt="Node.js" /></a>
-  <a href="https://www.mysql.com/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" width="40" height="40" alt="MySQL" /></a>
-  <a href="https://firebase.google.com/" target="_blank"><img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" width="40" height="40" alt="Firebase" /></a>
-  <a href="https://razorpay.com/" target="_blank"><img src="https://companieslogo.com/img/orig/RAZORPAY.BO-3b961b48.png?t=1697700305" width="40" height="40" alt="Razorpay" /></a>
-  <a href="https://git-scm.com/" target="_blank"><img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" width="40" height="40" alt="Git" /></a>
-  <a href="https://postman.com" target="_blank"><img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" width="40" height="40" alt="Postman" /></a>
-  <a href="https://www.figma.com/" target="_blank"><img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" width="40" height="40" alt="Figma" /></a>
+
+  <!-- Mobile Development -->
+  <a href="https://reactnative.dev/" target="_blank">
+    <img src="https://reactnative.dev/img/header_logo.svg" width="40" height="40" alt="React Native" />
+  </a>
+
+  <a href="https://developer.android.com/" target="_blank">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original.svg" width="40" height="40" alt="Android" />
+  </a>
+
+  <a href="https://developer.apple.com/ios/" target="_blank">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/apple/apple-original.svg" width="40" height="40" alt="iOS" />
+  </a>
+
+  <!-- Languages -->
+  <a href="https://www.typescriptlang.org/" target="_blank">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" width="40" height="40" alt="TypeScript" />
+  </a>
+
+  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" width="40" height="40" alt="JavaScript" />
+  </a>
+
+  <!-- State Management -->
+  <a href="https://redux.js.org/" target="_blank">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" width="40" height="40" alt="Redux" />
+  </a>
+
+  <!-- Backend -->
+  <a href="https://nodejs.org/" target="_blank">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" width="40" height="40" alt="Node.js" />
+  </a>
+
+  <a href="https://nestjs.com/" target="_blank">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nestjs/nestjs-original.svg" width="40" height="40" alt="NestJS" />
+  </a>
+
+  <!-- Databases -->
+  <a href="https://www.postgresql.org/" target="_blank">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg" width="40" height="40" alt="PostgreSQL" />
+  </a>
+
+  <a href="https://www.mysql.com/" target="_blank">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" width="40" height="40" alt="MySQL" />
+  </a>
+
+  <!-- Cloud & DevOps -->
+  <a href="https://firebase.google.com/" target="_blank">
+    <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" width="40" height="40" alt="Firebase" />
+  </a>
+
+  <a href="https://www.docker.com/" target="_blank">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg" width="40" height="40" alt="Docker" />
+  </a>
+
+  <a href="https://github.com/features/actions" target="_blank">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/githubactions/githubactions-original.svg" width="40" height="40" alt="GitHub Actions" />
+  </a>
+
+  <!-- Tools -->
+  <a href="https://git-scm.com/" target="_blank">
+    <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" width="40" height="40" alt="Git" />
+  </a>
+
+  <a href="https://www.postman.com/" target="_blank">
+    <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" width="40" height="40" alt="Postman" />
+  </a>
+
+  <a href="https://www.usebruno.com/" target="_blank">
+    <img src="https://raw.githubusercontent.com/usebruno/bruno/main/assets/images/logo-transparent.png" width="40" height="40" alt="Bruno" />
+  </a>
+
+  <a href="https://www.figma.com/" target="_blank">
+    <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" width="40" height="40" alt="Figma" />
+  </a>
+
+  <!-- Payments -->
+  <a href="https://razorpay.com/" target="_blank">
+    <img src="https://companieslogo.com/img/orig/RAZORPAY.BO-3b961b48.png?t=1697700305" width="40" height="40" alt="Razorpay" />
+  </a>
+
+  <!-- Testing -->
+  <a href="https://jestjs.io/" target="_blank">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/jest/jest-plain.svg" width="40" height="40" alt="Jest" />
+  </a>
+
+  <!-- AI Tools -->
+  <a href="https://claude.ai/" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Anthropic_logo.svg" width="40" height="40" alt="Claude" />
+  </a>
+
+  <a href="https://openai.com/codex/" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenAI_Logo.svg" width="40" height="40" alt="OpenAI Codex" />
+  </a>
+
 </p>
 
 ---
@@ -56,12 +140,26 @@
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=shashank3103-dev&show_icons=true&locale=en" alt="shashank3103-dev" /></p>
 
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=shashank3103-dev&" alt="shashank3103-dev" /></p>
- <img
+
+---
+### 🧠 LeetCode Stats:
+
+<p>
+  <img
     src="https://leetcard.jacoblin.cool/shashank-dev?theme=dark&font=Karma&ext=heatmap"
     alt="LeetCode Stats"
   />
+</p>
 
----
+<p>
+  <a href="https://leetcode.com/u/shashank-dev/">
+    <img
+      src="https://img.shields.io/badge/LeetCode-View%20Profile-orange?style=for-the-badge&logo=leetcode"
+      alt="LeetCode Profile"
+    />
+  </a>
+</p>
+
 
 ### 🐍 GitHub Contribution Snake:
 
