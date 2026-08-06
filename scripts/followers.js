@@ -1,9 +1,61 @@
 const fs = require('fs');
 const path = require('path');
-const { requestRestPaginated, USERNAME } = require('./github');
 const { escapeHtml, writeSection } = require('./utils');
 
 const README = path.join(process.cwd(), 'README.md');
+const USERNAME = process.env.GITHUB_USERNAME;
+const TOKEN = process.env.GITHUB_TOKEN;
+
+if (!USERNAME) {
+  console.error('GITHUB_USERNAME is required in env');
+  process.exit(1);
+}
+
+function sleep(ms) {
+  return new Promise((res) => setTimeout(res, ms));
+}
+
+async function fetchFollowers(username, token) {
+  let results = [];
+  let url = `https://api.github.com/users/${username}/followers?per_page=100`;
+  const headers = {
+    Accept: 'application/vnd.github+json',
+    'User-Agent': username,
+  };
+  if (token) headers.Authorization = `Bearer ${token}`;
+
+  while (url) {
+    const res = await fetch(url, { headers });
+    if (res.status === 403) {
+      const reset = res.headers.get('x-ratelimit-reset');
+      if (reset) {
+        const waitMs = Math.max(1000, Number(reset) * 1000 - Date.now() + 5000);
+        console.warn(`Rate limited, sleeping ${Math.round(waitMs / 1000)}s`);
+        await sleep(waitMs);
+        continue;
+      }
+    }
+
+    if (res.status >= 500) {
+      await sleep(500);
+      continue;
+    }
+
+    const data = await res.json();
+    if (!Array.isArray(data)) return results;
+    results = results.concat(data);
+
+    const link = res.headers.get('link');
+    if (link) {
+      const match = link.match(/<([^>]+)>; rel="next"/);
+      if (match && match[1]) url = match[1];
+      else url = null;
+    } else {
+      url = null;
+    }
+  }
+  return results;
+}
 
 function renderFollowerCell(user) {
   const login = escapeHtml(user.login);
@@ -22,7 +74,7 @@ function renderFollowerCell(user) {
   `;
 }
 
-function renderGrid(items, perRow = 8) {
+function renderGrid(items) {
   let html = '<div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:center;padding:8px;background:transparent">';
   for (const user of items) {
     html += renderFollowerCell(user);
@@ -33,17 +85,16 @@ function renderGrid(items, perRow = 8) {
 
 (async function main() {
   try {
-    const followers = await requestRestPaginated(`/users/${USERNAME}/followers`);
+    const followers = await fetchFollowers(USERNAME, TOKEN);
     if (!Array.isArray(followers) || followers.length === 0) {
       console.log('No followers found');
       return;
     }
 
-    // newest first - API tends to return newest first, but reverse to be safe
-    const sorted = followers.slice().reverse();
-
-    const latest = sorted.slice(0, 120); // limit for performance
-    const html = renderGrid(latest, 8);
+    // API returns oldest first for this endpoint; reverse to show newest first
+    const newestFirst = followers.slice().reverse();
+    const limited = newestFirst.slice(0, 120);
+    const html = renderGrid(limited);
 
     const ok = writeSection(README, 'followers', html);
     if (!ok) {
