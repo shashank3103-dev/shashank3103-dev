@@ -1,0 +1,19 @@
+{
+  "name": "github-profile-readme-updater",
+  "version": "1.0.0",
+  "description": "Auto-update GitHub profile README with followers, contributors, activity and stats",
+  "main": "scripts/github.js",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "update:followers": "node scripts/followers.js",
+    "update:contributors": "node scripts/contributors.js",
+    "update:contributions": "node scripts/contributions.js",
+    "update:activity": "node scripts/activity.js",
+    "update:stats": "node scripts/stats.js",
+    "update:all": "npm run update:followers && npm run update:contributors && npm run update:contributions && npm run update:activity && npm run update:stats"
+  },
+  "license": "MIT"
+}
