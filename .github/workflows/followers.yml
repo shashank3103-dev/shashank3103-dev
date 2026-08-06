@@ -15,13 +15,14 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 22
+      - name: Install jq
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y jq
 
-      - run: npm install
-
-      - run: node scripts/followers.js
+      - name: Run followers updater
+        run: |
+          bash scripts/followers.sh
         env:
           GITHUB_USERNAME: shashank3103-dev
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
