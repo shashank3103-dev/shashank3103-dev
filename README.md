@@ -164,3 +164,33 @@
 ### 🐍 GitHub Contribution Snake:
 
 ![snake svg](https://raw.githubusercontent.com/shashank3103-dev/shashank3103-dev/main/github-snake.svg)
+
+---
+
+## Auto-update sections
+
+The following sections are maintained automatically by scheduled GitHub Actions and repository scripts. Do not edit the content between the markers — the scripts update these sections on a schedule and via workflow_dispatch.
+
+<!--START_SECTION:followers-->
+<!--END_SECTION:followers-->
+
+<!--START_SECTION:contributors-->
+<!--END_SECTION:contributors-->
+
+<!--START_SECTION:contributed-repositories-->
+<!--END_SECTION:contributed-repositories-->
+
+<!--START_SECTION:recent-activity-->
+<!--END_SECTION:recent-activity-->
+
+<!--START_SECTION:github-stats-->
+<!--END_SECTION:github-stats-->
+
+---
+
+Run locally:
+
+export GITHUB_TOKEN="your-personal-access-token"
+export GITHUB_USERNAME="shashank3103-dev"
+npm run update:all
+
