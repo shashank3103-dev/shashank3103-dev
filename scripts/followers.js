@@ -3,11 +3,12 @@ const path = require('path');
 const { escapeHtml, writeSection } = require('./utils');
 
 const README = path.join(process.cwd(), 'README.md');
-const USERNAME = process.env.GITHUB_USERNAME;
-const TOKEN = process.env.GITHUB_TOKEN;
+// support both GITHUB_USERNAME and USERNAME
+const USERNAME = process.env.GITHUB_USERNAME || process.env.USERNAME || process.env.GH_USERNAME;
+const TOKEN = process.env.GITHUB_TOKEN || process.env.TOKEN || process.env.GH_TOKEN;
 
 if (!USERNAME) {
-  console.error('GITHUB_USERNAME is required in env');
+  console.error('GITHUB_USERNAME or USERNAME (or GH_USERNAME) is required in env');
   process.exit(1);
 }
 

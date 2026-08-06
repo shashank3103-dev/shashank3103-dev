@@ -3,15 +3,16 @@ const { URL } = require('url');
 
 const BASE_REST = 'https://api.github.com';
 const BASE_GRAPHQL = 'https://api.github.com/graphql';
-const TOKEN = process.env.GITHUB_TOKEN;
-const USERNAME = process.env.GITHUB_USERNAME;
+const TOKEN = process.env.GITHUB_TOKEN || process.env.TOKEN || process.env.GH_TOKEN;
+// support both GITHUB_USERNAME and USERNAME for env var naming
+const USERNAME = process.env.GITHUB_USERNAME || process.env.USERNAME || process.env.GH_USERNAME;
 
 if (!TOKEN) {
-  console.error('GITHUB_TOKEN is required in env');
+  console.error('GITHUB_TOKEN (or TOKEN/GH_TOKEN) is required in env');
   process.exit(1);
 }
 if (!USERNAME) {
-  console.error('GITHUB_USERNAME is required in env');
+  console.error('GITHUB_USERNAME or USERNAME (or GH_USERNAME) is required in env');
   process.exit(1);
 }
 
