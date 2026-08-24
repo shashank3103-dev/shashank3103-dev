@@ -163,4 +163,4 @@
 
 ### 🐍 GitHub Contribution Snake:
 
-![snake svg](https://raw.githubusercontent.com/shashank3103-dev/shashank3103-dev/main/github-snake.svg)
+![snake svg](https://raw.githubusercontent.com/shashank3103-dev/shashank3103-dev/main/github-snake-dark.svg)
